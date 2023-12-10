@@ -1,0 +1,10 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: exam
+  name: pod-list-reader
+rules:
+- apiGroups: [""]
+  resources: ["pods"]
+  verbs: ["list"]
+  
